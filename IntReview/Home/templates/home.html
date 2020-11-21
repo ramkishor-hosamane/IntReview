@@ -2,8 +2,11 @@
 {% block content %}
 
 <script>
-$('#home').addClass("active");
 
+$(document).ready(function(){
+ $('#home').addClass("active");
+
+});
 </script>
 
 <!-- home page goes here-->
@@ -88,4 +91,6 @@ $('#home').addClass("active");
         </div>
     </div>
 </div>
+
+
 {% endblock content %}

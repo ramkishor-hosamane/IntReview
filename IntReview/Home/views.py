@@ -19,12 +19,14 @@ class Signup(View):
         user_name = request.POST.get('name')
         password = request.POST.get('password')
         email = request.POST.get('email')
+        
         #Profile picture is not done yet
         #profile_pic = request.POST.get('profile_pic')
+        
         phone_number = request.POST.get('phonenumber')
         
-
-        print(user_name,password,email,phone_number)
+        #print("Prodile pic is ",type(profile_pic))
+        print("Other things ",user_name,password,email,phone_number)
         ''' 
             Over to you Akanksha 
             All the best !!!!!!!

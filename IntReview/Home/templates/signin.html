@@ -3,8 +3,11 @@
 {% load static %}
 {% block content %}
 <script>
-$('#signin').addClass("active");
 
+$(document).ready(function(){
+ $('#signin').addClass("active");
+
+});
 </script>
 <!-- signin page goes here-->
 
@@ -62,15 +65,10 @@ $('#signin').addClass("active");
 						</div>
 
 
-
-
-
-
-
 						<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
 							<div class="offset-md-5">
 
-								<button class="btn btn-light btn-lg" style="margin-left:16px;" type="submit">Submit </button></div>
+								<button class="btn btn-info btn-lg" style="margin-left:16px;" type="submit">Submit </button></div>
 						</div>
 					
 					</div>

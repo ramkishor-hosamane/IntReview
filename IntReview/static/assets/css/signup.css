@@ -3,7 +3,7 @@
   height: 110px;
   display: block;
   max-width: 100%;
-  height: auto;
+  top: 200px;
 }
 
 .file-upload {
@@ -24,6 +24,7 @@
   position: relative;
   top: 89px;
   left: 100px;
+  width: 50px;
   color: #666666;
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
@@ -33,12 +34,15 @@
 }
 
 .upload-button {
-  font-size: 1.2em;
+  font-size: 1.7em;
+  color: rgb(7, 5, 5);
+
 }
 
 .upload-button:hover {
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-  color: #999;
+  color: rgb(7, 5, 5);
+  cursor: pointer;
 }
 
 .input-icons i {
