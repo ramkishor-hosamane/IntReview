@@ -27,7 +27,8 @@ $(document).ready(function(){
 	</div>
 	<div class="container">
 		<div>
-			<form>
+			<form method="POST" action="{% url 'signin' %}">
+			{% csrf_token %}
 				<div class="form-group">
 					<div id="formdiv" style="width: 87%;">
 
@@ -65,10 +66,30 @@ $(document).ready(function(){
 						</div>
 
 
+
+						<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+							<div class="offset-md-4">
+								
+								{% if error_msg %}
+
+										<div class="alert alert-danger alert-dismissible" width="90%">
+										<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+										{{ error_msg }}
+										</div>
+								{% endif %}
+							</div>
+					
+						</div>
+
+
+
+
+
+
 						<div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
 							<div class="offset-md-5">
-
-								<button class="btn btn-info btn-lg" style="margin-left:16px;" type="submit">Submit </button></div>
+								
+							<button class="btn btn-info btn-lg" style="margin-left:16px;" type="submit">Submit </button></div>
 						</div>
 					
 					</div>

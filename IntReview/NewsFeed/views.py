@@ -5,5 +5,6 @@ from django.views import View
 
 #Routing for Newsfeed
 class Newsfeed(View):    
-    def get(self,request):
-        return render(request, 'newsfeed.html')
+    def get(self,request,username):
+        context={"user_name":username}
+        return render(request, 'newsfeed.html',context=context)

@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 
 
-			<form method="POST" action="{% url 'signup' %}">
+			<form method="POST" action="{% url 'signup' %}" enctype="multipart/form-data">
 				{% csrf_token %}
 				<div class="form-group">
 					<div id="formdiv" style="width: 87%;">
