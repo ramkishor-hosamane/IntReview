@@ -21,7 +21,7 @@ class Signup(View):
         email = request.POST.get('email')
         #Profile picture is not done yet
         #profile_pic = request.POST.get('profile_pic')
-        phone_number = request.POST.get('phone_number')
+        phone_number = request.POST.get('phonenumber')
         
 
         print(user_name,password,email,phone_number)
