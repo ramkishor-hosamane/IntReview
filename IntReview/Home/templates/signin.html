@@ -2,7 +2,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<script>
+$('#signin').addClass("active");
 
+</script>
 <!-- signin page goes here-->
 
 <link rel="stylesheet" href=  "{% static 'assets/css/Carousel-Hero.css' %}">
@@ -15,7 +18,7 @@
 	<div class="row" style="">
 		<div class="col">
 			<div class="container offset-lg-5" s>
-				<h1 class="display-5" style="margin-left: 45px;">Login</h1>
+				<h1 class="display-5 text-info" style="margin-left: 45px;">Login</h1>
 			</div>
 		</div>
 	</div>
