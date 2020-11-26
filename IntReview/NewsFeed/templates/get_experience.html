@@ -1,0 +1,23 @@
+{% extends 'newsfeed_base.html' %}
+{% load static %}
+
+
+{% block newsfeed %}
+<style>
+    * {
+        color: black;
+    }
+</style>
+
+
+<form method="POST" action="{% url 'get_experience' %}">
+{% csrf_token %}
+
+{{ experience_form.as_p }}
+
+
+</form>
+ 
+
+
+    {% endblock newsfeed %}
